@@ -1,0 +1,119 @@
+4010-250 Project Journal
+Python Word Frequency Project
+
+Name: Zachary Richardson
+
+===========  Stage 1  ==========================================
+Start
+Estimated Time	00 20
+Plan:
+(Order of implementation, testing approach, estimation technique)
+-implement the standard input
+-split the lines
+-append the words to a new list
+-print the list
+-test with a basic test file including spaces, caps, and punctuation
+
+Complete
+Actual Time	00 25
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+-issue with split()
+-issue with appending to the list
+-issue if line was blank
+-all issues fixed easily
+-created a solid base for the rest of the project that will be easy to use
+for the rest of the project (ex. used a list which has many methods)
+
+===========  Stage 2  ==========================================
+Start
+Estimated Time	00 30
+Plan:
+(Order of implementation, testing approach, estimation technique)
+-use the code from the first stage
+-use strip to get rid of trailing punctuation
+-remove the numbers
+-make words lowercase
+-print the output
+-test with numbers, punctuation and caps
+
+Complete
+Actual Time	00 40
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+-issue with removing punctuation because removed hyphens as well
+-issue removing numbers
+-issue when line was numbers and all were removed
+-all issues fixed with simple checks in the code
+-should be easily transfered to stage 3
+
+===========  Stage 3  ==========================================
+Start
+Estimated Time	01 00
+Plan:
+(Order of implementation, testing approach, estimation technique)
+-create a dictionary of key,value pairs
+-print the dictionary
+-test with simple text first (one word file)
+
+Complete
+Actual Time	01 25
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+-issue with printing
+-simple loop used to correct issue with printing
+-only minor changes to print in descending order needed
+
+===========  Stage 4  ==========================================
+Start
+Estimated Time	01 00
+Plan:
+(Order of implementation, testing approach, estimation technique)
+-make new function to sort in order
+-test using same test as stage 3 to compare
+-shouldn't take long since the dictionary is already made from stage 3
+
+Complete
+Actual Time	02 00
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+-issue in sorting by value in dictionary
+-issue in sorting by key in dictionary if value was the same
+-found OrderedDict which solved all of my issues
+-testing all passed
+
+===========  Stage 5  ==========================================
+Start
+Estimated Time	01 30
+Plan:
+(Order of implementation, testing approach, estimation technique)
+-make new function for printing the graph
+-test with same tests as stage 3 and stage 4
+-basic code reuse, but actual printing is new
+-expect to take longer on this in order to print correctly
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  Stage 6  ==========================================
+Start
+Estimated Time	HH MM
+Plan:
+(Order of implementation, testing approach, estimation technique)
+
+Complete
+Actual Time	HH MM
+Observations:
+(Lessons learned, problems encountered, obstacles overcome, etc.)
+
+
+===========  PROJECT SUMMARY REFLECTION  =======================
+(Replace this text with a couple of paragraphs summarizing your
+experience with this project. What is too easy or too hard? What
+was the most challenging technical problem you faced? How
+did your estimated and actual time compare? Did your estimates
+improve as you advanced to later stages? Why or why not?)
+================================================================

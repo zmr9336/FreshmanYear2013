@@ -1,5 +1,6 @@
 import sys
 import re
+from collections import OrderedDict
 
 def hashTable(candidatePerfect):
 	table = {}
@@ -10,9 +11,10 @@ def hashTable(candidatePerfect):
 			table.update({word : 1})
 	return table
 
-def printTable(table):
-	for key, value in table.items():
-		print(key, value)
+def sortTable(table):
+	new = OrderedDict(sorted(table.items()))
+	for x, y in sorted(new.items(), key = lambda kv:kv[1], reverse = True):
+		print("%s %s" % (x,y))			
 
 def wellFormedCandidate(candidate):
 	candidate2 = []
@@ -41,6 +43,6 @@ def main():
 	candidate = originalCandidate()
 	candidatePerfect = wellFormedCandidate(candidate)
 	hist = hashTable(candidatePerfect)
-	printTable(hist)
+	sortTable(hist)
 
 main()
