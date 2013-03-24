@@ -1,7 +1,18 @@
+"""
+Author: Zachary Richardson
+Assignment: frequency.py
+Date: 3/23/13
+"""
+
 import sys
 from collections import OrderedDict
 
 def hashTable(candidatePerfect):
+	"""
+	creates a dictionary with each word from candidatePerfect
+	as a key and its frequency as a value. Then, the dictionary
+	is returned.
+	"""
 	table = {}
 	for word in candidatePerfect:
 		if word in table:
@@ -11,11 +22,20 @@ def hashTable(candidatePerfect):
 	return table
 
 def sortTable(table):
+	"""
+	sorts the table, which is a dictionary based on alphabetical order
+	and by the greatest value. It then prints out the dictionary.
+	"""
 	new = OrderedDict(sorted(table.items()))
 	for x, y in sorted(new.items(), key = lambda kv:kv[1], reverse = True):
 		print("%s %s" % (x,y))			
 
 def wellFormedCandidate(candidate):
+	"""
+	strips the lines of any trailing punctuation or numbers.
+	appends the words to a new list, candidatePerfect.
+	then candidatePerfect is returned.
+	"""
 	candidate2 = []
 	candidatePerfect = []
 	candidate2 = [word.lower().rstrip('\'\",.:;!?') for word in candidate]
@@ -27,6 +47,11 @@ def wellFormedCandidate(candidate):
 	return candidatePerfect
 
 def originalCandidate():
+	"""
+	splits the lines as long as the len isn't 0.
+	it appends the words to a list, candidate, and
+	then returns the list
+	"""
 	candidate = []
 	for line in sys.stdin:
 		line = line.split()

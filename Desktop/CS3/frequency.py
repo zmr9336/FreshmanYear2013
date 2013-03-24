@@ -1,6 +1,17 @@
+"""
+Author: Zachary Richardson
+Assignment: frequency.py
+Date: 3/22/13
+"""
+
 import sys
 
 def frequency(line):
+	"""
+	splits the lines as long as the len isn't 0.
+	it appends the words to a list, candidate, and
+	then prints the list
+	"""
 	candidate = []
 	if len(line) == '':
 		pass

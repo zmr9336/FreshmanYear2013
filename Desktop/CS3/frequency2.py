@@ -1,6 +1,17 @@
+"""
+Author: Zachary Richardson
+Assignment: frequency.py
+Date: 3/22/13
+"""
+
 import sys
 
 def wellFormedCandidate(candidate):
+	"""
+	strips the lines of any trailing punctuation or numbers.
+	appends the words to a new list, candidatePerfect.
+	then candidatePerfect is returned.
+	"""
 	candidate2 = []
 	candidatePerfect = []
 	candidate2 = [word.lower().rstrip('\'\",.:;!?') for word in candidate]
@@ -12,6 +23,11 @@ def wellFormedCandidate(candidate):
 	return candidatePerfect
 
 def originalCandidate():
+	"""
+	splits the lines as long as the len isn't 0.
+	it appends the words to a list, candidate, and
+	then returns the list
+	"""
 	candidate = []
 	for line in sys.stdin:
 		line = line.split()

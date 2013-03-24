@@ -1,0 +1,47 @@
+Counts the frequency of the words:
+
+Test.txt
+a 1
+happy 1
+zack 2
+name 1
+i 7
+super 1
+is 1
+how 1
+im 3
+are 1
+facebook 1
+you 1
+software 1
+my 1
+hello 2
+today 1
+engineer 1
+EmptyFile.txt
+Tabs.txt
+a 1
+i 1
+engineer 1
+am 1
+hello 1
+software 1
+Spaces.txt
+a 1
+i 1
+engineer 1
+am 1
+hello 1
+software 1
+OneLetter.txt
+a 1
+Numbers.txt
+how 1
+you 1
+hello 1
+are 1
+Punctuation.txt
+how 1
+you 1
+hello 1
+are 1

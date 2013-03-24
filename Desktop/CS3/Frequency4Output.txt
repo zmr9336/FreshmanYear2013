@@ -1,0 +1,53 @@
+Sorts the frequencies in alphabetical order and by occurrence:
+
+Test.txt
+i 7
+im 3
+hello 2
+zack 2
+a 1
+are 1
+engineer 1
+facebook 1
+happy 1
+how 1
+is 1
+my 1
+name 1
+software 1
+super 1
+today 1
+you 1
+EmptyFile.txt
+Tabs.txt
+a 1
+am 1
+engineer 1
+hello 1
+i 1
+software 1
+Spaces.txt
+a 1
+am 1
+engineer 1
+hello 1
+i 1
+software 1
+OneLetter.txt
+a 1
+Numbers.txt
+are 1
+hello 1
+how 1
+you 1
+Punctuation.txt
+are 1
+hello 1
+how 1
+you 1
+RepeatedFreq.txt
+hello 3
+i 3
+day 1
+good 1
+sir 1
