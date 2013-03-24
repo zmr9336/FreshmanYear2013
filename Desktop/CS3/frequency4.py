@@ -1,5 +1,4 @@
 import sys
-import re
 from collections import OrderedDict
 
 def hashTable(candidatePerfect):
@@ -21,11 +20,10 @@ def wellFormedCandidate(candidate):
 	candidatePerfect = []
 	candidate2 = [word.lower().rstrip('\'\",.:;!?') for word in candidate]
 	for word in candidate2:
-		word2 = re.sub("\d+", "", word)
-		if len(word2) == 0:
+		if len(word) == 0:
 			pass
-		else:
-			candidatePerfect.append(word2)
+		elif word.isalpha():
+			candidatePerfect.append(word)
 	return candidatePerfect
 
 def originalCandidate():
@@ -45,4 +43,5 @@ def main():
 	hist = hashTable(candidatePerfect)
 	sortTable(hist)
 
-main()
+if __name__ == '__main__':
+	main()

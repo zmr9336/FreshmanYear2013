@@ -93,27 +93,45 @@ Plan:
 -expect to take longer on this in order to print correctly
 
 Complete
-Actual Time	HH MM
+Actual Time	02 00
 Observations:
 (Lessons learned, problems encountered, obstacles overcome, etc.)
-
+-issues with printing
+-issue finding the length of the longest word
+-issue with print formatting
+-all issues fixed with the addition of variables and while loops
+-completed stage 5 in more time than expected, but more concerned with
+better code than timeframe
 
 ===========  Stage 6  ==========================================
 Start
-Estimated Time	HH MM
+Estimated Time	00 30
 Plan:
 (Order of implementation, testing approach, estimation technique)
 
 Complete
-Actual Time	HH MM
+Actual Time	00 35
 Observations:
 (Lessons learned, problems encountered, obstacles overcome, etc.)
-
+-issue with reading the two files
+-issue with running if only one file was entered
+-all issues fixed with an if/else statement
+-runs correctly based on expected outcome
 
 ===========  PROJECT SUMMARY REFLECTION  =======================
-(Replace this text with a couple of paragraphs summarizing your
-experience with this project. What is too easy or too hard? What
-was the most challenging technical problem you faced? How
-did your estimated and actual time compare? Did your estimates
-improve as you advanced to later stages? Why or why not?)
+This project was pretty hard for me.  I usually take a long time with coding
+and this project was no different for me.  I heard from other students that
+this priject was made up of just endless lines of code, although I did not 
+find that to be true.  I was able to condense a lot of my code into list
+comprehensions. The most challenging part of the project was the final stage.
+I had issues with reading in two files, so i switched from the sys.stdin
+input type to the fileinput.input type, which allowed me to search each file
+seperately.  After I switched, only minor changes were needed to get the code
+to work with both files and remove the necessary words.
+
+My estimation was close to being correct, although I mostly underestimated
+how much time it would take to complete the code.  As I went through the later 
+stages, my times were worse becuase I ran into ore problems along the 
+way.  I hope to be able to improve my times for the future, so that I 
+will be more reliable in a job atmosphere.
 ================================================================

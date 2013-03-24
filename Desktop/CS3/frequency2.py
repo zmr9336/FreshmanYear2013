@@ -1,17 +1,14 @@
 import sys
-import string
-import re
 
 def wellFormedCandidate(candidate):
 	candidate2 = []
 	candidatePerfect = []
-	candidate2 = [word.rstrip('\'\",.:;!?') for word in candidate]
+	candidate2 = [word.lower().rstrip('\'\",.:;!?') for word in candidate]
 	for word in candidate2:
-		word2 = re.sub("\d+", "", word)
-		if len(word2) == 0:
+		if len(word) == 0:
 			pass
-		else:
-			candidatePerfect.append(word2)
+		elif word.isalpha():
+			candidatePerfect.append(word)
 	return candidatePerfect
 
 def originalCandidate():
@@ -31,4 +28,5 @@ def main():
 	for x in candidatePerfect:
 		print(x)
 
-main()
+if __name__ == '__main__':
+	main()
