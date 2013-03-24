@@ -89,26 +89,29 @@ def graphicHistogram(sortedTable):
 	prints out the table in a histogram form, (word ***),
 	as long as the table has at least one element.
 	"""
-	M = sortedTable[0][1]
-	i = 0
-	j = 0
-	longestWord = 0
+	if len(sortedTable) < 1:
+		pass
+	else:
+		M = sortedTable[0][1]
+		i = 0
+		j = 0
+		longestWord = 0
 
-	while i < len(sortedTable):
-		word = sortedTable[i][0]
-		if len(word) > longestWord:
-			longestWord = len(word)
-		i += 1
+		while i < len(sortedTable):
+			word = sortedTable[i][0]
+			if len(word) > longestWord:
+				longestWord = len(word)
+			i += 1
 
-	while j < len(sortedTable):
-		N = sortedTable[j][1]
-		hist = (50 * N) // M
-		if len(sortedTable[j][0]) == longestWord:
-			print(sortedTable[j][0] +" " + '*' * hist)
-		else:
-			length = (longestWord - len(sortedTable[j][0])) + 1
-			print(sortedTable[j][0] + ' ' * length + '*' * hist)
-		j += 1
+		while j < len(sortedTable):
+			N = sortedTable[j][1]
+			hist = (50 * N) // M
+			if len(sortedTable[j][0]) == longestWord:
+				print(sortedTable[j][0] +" " + '*' * hist)
+			else:
+				length = (longestWord - len(sortedTable[j][0])) + 1
+				print(sortedTable[j][0] + ' ' * length + '*' * hist)
+			j += 1
 
 def main():
 	candidate = originalCandidate()
